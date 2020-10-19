@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<head>
+  <link href="/normalize.css" rel="stylesheet">
+  <style>
+  *{
+    margin:0;
+    padding:0;
+    
+
+  }
+    header {
+      text-align: center;
+      background: url('https://i.imgur.com/XsyDCR4.jpg');
+      background-size: cover;
+      color: white;
+    }
+    body{
+      background: rgb(158,158,158);
+      background: linear-gradient(0deg, rgba(158,158,158,0.8578781854538691) 0%, rgba(1,17,52,0.8802871490393032) 3%);
+      color:white;
+    }
+    a {
+      color: white;
+    }
+    h1 {
+      font-size: 70px;
+      background:none;
+    }
+    h2{
+     color: 
+    }
+    img {
+      margin: 40px 0px 0px 0px;
+      border: 7px solid white;
+      border-radius: 20px;
+    }
+    ul {
+      padding: 10px;
+      background: rgba(0,0,0,0.5);
+    }
+    li {
+      display: inline;
+      padding: 0px 10px 0px 10px;
+    }
+    article {
+      max-width: 500px;
+      padding: 20px;
+      margin: 0 auto;
+      background: rgb(255,255,255);
+    background: linear-gradient(180deg, rgba(255,255,255,0.8578781854538691) 0%, rgba(27,59,87,0.5189426112241772) 3%);
+    }
+    button{
+    background:yellow;
+    color:blue;
+     font-size: 20px;
+    }
+    button:hover{
+    background:red;
+    color:yellow;
+    
+    }
+    
+    .articles{
+     margin-bottom:30px; 
+    }
+    
+    @media (max-width: 500px) {
+      h1 {
+        font-size: 36px;
+        padding: 5px;
+      }
+      li {
+        padding: 5px;
+        display: block;
+      }
+      img {
+      width: 40vw;
+      
+    }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="https://i.imgur.com/tF3Vwzj.png">
+    <h1>Jackson's Blog</h1>
+    <ul>
+      <li><a href="#About_Me">About Me</a></li>
+      <li><a href="#">Education</a></li>
+      <li><a href="#">Goalss</a></li>
+    </ul>
+  </header>
+  
+  <div class="articles"> 
+  <article>
+    <h2 > <a name="About-Me"></a>About Me</h2>
+    <p>Hi My name is Jackson Cortez. I am from Los Angeles, Ca. I enjoy going  hiking in Griffith Park Observatory. Pre Covid-19 I use to go every weekend. Due to many restriction I haven't done that lately. One of my Favorites foods is French Fries. I think Pink's has one of the best fries in the city of Los Angeles. One of my favorite TV show is The Mandelorian.</p>
+    <button>Like</button>
+  </article>
+  <article>
+    <h2>Education</h2>
+    <p>I have a Bachelors degree in Psychology. I also have 3 Associates Degree. I have an Associates in Computer Science, Web Design with Database Administration and Psychology.</p>
+    <button>Like</button>
+  </article>
+  <article>
+    <h2>Goals</h2>
+    <p>One of my goals is to apply my skills and talents to build projects that would inspire the next generation.   </p>
+    <button>Like</button>
+  </article>
+  
+  
+  </div>
+  
+  
+  <script>
+    $("button").on("click", function() {
+      alert("Clicked!");
+    });
+  </script>
+</body>
